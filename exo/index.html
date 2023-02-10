@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="posti">
+    <form class="form-type">
+      <div class="inputElement">
+        <input type="text" id="task-input">
+        <button type="submit" id="add-task-button">Ajouter tâche</button>
+      </div>
+     
+    </form>
+  </div>
+
+  <div class="listElemnt">
+    <ul id="task-list">
+    
+    </ul>
+  </div>
+      <script>
+        const form = document.querySelector("form");
+        const taskInput = document.querySelector("#task-input");
+        const taskList = document.getElementById("task-list");
+        var ajout = '';
+        
+
+        form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        taskList.style.visibility = "initial";
+        // récupérer la valeur saisie dans le champ de saisie
+        const task = taskInput.value;
+        taskInput.value = "";
+          
+
+        console.log(ajout);
+          
+        const text = '<li class="elementList"><p class="list"> ${ajout} </p><i class="de fa fa-trash-o"></i></li>'
+        // ajouter la tâche à la liste
+        taskList.appendChild(text);
+        
+        });
+        
+
+
+
+      </script>
+</body>
+</html>

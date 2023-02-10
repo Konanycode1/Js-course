@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1140px;
+} 
+body{
+    padding: 10%;
+    
+}
+li{
+    list-style-type: none;
+}
+.posti{
+    
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+}
+.form-type{
+    margin: 0 auto;
+    width: 10%;
+}
+.inputElement{
+    padding: 10%;
+    width: 400px;
+    display: block;
+    justify-content: space-around;
+}
+#add-task-button{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    border: none ;
+}
+#task-input{
+    width: 150px;
+    height: 30px;
+    border: none ;
+}
+.listElemnt{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+   
+}
+#task-list{
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
