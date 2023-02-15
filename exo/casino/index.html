@@ -5,10 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casino</title>
+ <style>
+    P{
+       border: 5px solid gray;
+        padding: 3rem 5rem;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 100px;
+        margin-left: 20px;   
+    }
+    .para{
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 2px solid orangered;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+    }
+    .btn{
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: center;
+    }
+    button{
+        width: 10rem;
+        height: 2rem;
+        border: none;
+        background-color: red;
+        color: white;
+    }
+    .dev{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    body{
+        margin: 0;
+    }
+    .principe{
+    }
+ </style>
 </head>
 <body>
-    <p id="para"></p>
+    <div class="dev">
+        <div class="principe">
+            <h1>Principe du jeu</h1>
+
+        </div>
+        <div class="">
+            <div class="para">
+                <p id="para1">1</p>
+                <p id="para2">2</p>
+                <p id="para3">4</p>
+            </div>
+            <div class="btn">
+                <button id="btnclick">Starte</button>
+            </div>
+        </div>
+        <div class="">
+            <p id="totale">4</p>
+        </div>
+    </div>
     
-    <script src="index.js"></script>
+    
+    
+    
+    <script src="casi.js"></script>
 </body>
 </html>
