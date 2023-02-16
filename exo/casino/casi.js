@@ -5,7 +5,7 @@ var btnclick = document.getElementById('btnclick')
 var totale = document.getElementById('totale')
 
 
-btnclick.addEventListener('click' ,()=>{
+btnclick.addEventListener('click',()=>{
     let timeCompte = 80;
 let inter = null;
 let numbers = [0,1,2,3,4,5,6,7,8,9];
