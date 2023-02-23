@@ -6,17 +6,17 @@ const Indexrouter = require("./router/index");
 const AppError = require("./utils/appError");
 const errorHandler = require("./utils/errorHandler");
 const bodyParser = require('body-parser');
-const app = express()
+const app = express() 
+
+app.use(express.json());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-extended: true
-}));
-app.use(errorHandler);
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
-app.use('/', Indexrouter);
-app.use('/create', Indexrouter);
-app.use('/delete', Indexrouter);
-app.use('/update', Indexrouter);
+app.use('/api', Indexrouter);
+app.use(errorHandler);
+// app.use('/create', Indexrouter);
+// app.use('/delete', Indexrouter);
+// app.use('/update', Indexrouter);
 app.all("*", (req, res, next) => {
 next(new AppError(`The URL ${req.originalUrl} does not exists`, 404));
 });
