@@ -14,9 +14,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 app.use('/api', Indexrouter);
 app.use(errorHandler);
-// app.use('/create', Indexrouter);
-// app.use('/delete', Indexrouter);
-// app.use('/update', Indexrouter);
 app.all("*", (req, res, next) => {
 next(new AppError(`The URL ${req.originalUrl} does not exists`, 404));
 });
@@ -31,25 +28,5 @@ server.on('listening' , ()=>{
 server.listen(port)
 module.exports = app;
 
-// maintenant je vais acceder à mon api sur postman
-// le get passe bien 
-// JE vais acceder avec le post pour faire mon ajoute à la base de donnée
 
-
-// tu as demarer ton serveur 
-// nonn 
-// tues là ???????????
-// const PORT = 3000;
-// app.listen(PORT, () => {
-//  console.log(`server running on port ${PORT}`);
-// });
-
-
-//creaion du serveur
-
-
-// ton serveur à demarer donc je peux parce au verification maintenant
-
-// ouais ouais tu peux mettre tes routes en place maintenant et tester
-// ok merci 
 
