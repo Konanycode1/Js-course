@@ -20,11 +20,38 @@
 //   alert("vous n'etes pas autorisé");
 // }
 
-let rep = prompt("Entrer un nombre")
+// let rep = prompt("Entrer un nombre")
 
-if(parseInt(rep) % 2 == 0 && parseInt(rep) % 5 == 0 || parseInt(rep) % 3 == 0 && parseInt(rep) % 9 == 0 ){
-  alert("Vous avez gagnez")
+// if(parseInt(rep) % 2 == 0 && parseInt(rep) % 5 == 0 || parseInt(rep) % 3 == 0 && parseInt(rep) % 9 == 0 ){
+//   alert("Vous avez gagnez")
+// }
+// else{
+//     alert("vous avez perdu");
+// }
+
+// try {
+//   console.log("hello world!!");
+
+//   functionAjout();
+// } catch (error) {
+//   console.log("erreur" + error)
+  
+// }
+// finally{
+//   console.log("merci pour les erreur");
+// }
+
+let por = document.querySelectorAll(".por")
+
+  setTimeout(slic(), 1000)
+
+
+function slic() {
+  por.forEach(element =>{
+    setTimeout(()=>{
+      element.style.opacity = 1 
+    }, 100)
+         
+  })
 }
-else{
-    alert("vous avez perdu");
-}
+
