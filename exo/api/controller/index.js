@@ -15,7 +15,6 @@ exports.getAlluser = (req, res, next) => {
    exports.createUser = (req, res, next) => {
     if (!req.body) return next(new AppError("No form data found", 404));
     const values = [req.body.name,req.body.last_name, req.body.numbersed];
-    console.log(req.body.name);
     conn.query(
         `INSERT INTO user(name, last_name, numbersed) VALUES('${req.body.name}','${req.body.last_name}','${req.body.numbersed}')`,
         [values],function (err, data, fields) {
@@ -39,9 +38,9 @@ exports.getAlluser = (req, res, next) => {
         if (err) return next(new AppError(err, 500));
         res.status(200).json({
           status: "success",
-          length: data?.length,
+          length: data.length,
           data: data,
-        });
+        }); 
       }
     );
    };
@@ -63,6 +62,7 @@ exports.getAlluser = (req, res, next) => {
    };
 
    exports.deleteUser = (req, res, next) => {
+    console.log(req.params)
     if (!req.params.id) {
       return next(new AppError("No user id found", 404));
     }
