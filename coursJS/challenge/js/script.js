@@ -3,27 +3,18 @@ let add = document.getElementById('btn');
 
 let tab = [1,2,3,4,5,6];
 let des = tab[Math.floor(Math.random() * tab.length)];
-
-
-
+let ludo = document.querySelectorAll(".ludo");
+let de = document.createElement('div')
+de.className = "ludo";
 
 function createDiv() {
     add.addEventListener('click', ()=>{
-        let de = document.createElement('div')
-        de.className = "ludo";
-        let ludo = document.querySelectorAll(".ludo");
         zone.appendChild(de)
         ludo.forEach(element => {
             let cercle = document.createElement('div')
             cercle.className = "cercle";
             element.appendChild(cercle);
-            
         });
-
-       
-
-
-        ludo.appendChild(cercle)
         
 
 
