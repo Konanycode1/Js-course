@@ -14,7 +14,6 @@ function splite(chaine, separa) {
             recup = "";
              
         }
-        
     }
     tab.push(recup);
     // if(recup === ''){

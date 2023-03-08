@@ -7,11 +7,8 @@ function calcul(nbr) {
     let result = nbr*2
     return result;
 }
-
 let tableau = [1,2,3,4,5,6];
-
-console.log(tableau[0])
-
+console.log(tableau[0]);
 pays = {
     nom: "japan",
     popu: 200000,
@@ -22,9 +19,6 @@ pays = {
     }
 }
  console.log(pays.nom)
-
- 
- 
  let titre = document.querySelector("h1");
  function couleur(clr) {
     titre.style.background = clr;

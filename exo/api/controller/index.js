@@ -62,10 +62,11 @@ exports.getAlluser = (req, res, next) => {
    };
 
    exports.deleteUser = (req, res, next) => {
-    console.log(req.params)
+   
     if (!req.params.id) {
       return next(new AppError("No user id found", 404));
     }
+    console.log(req.params.id)
     conn.query(
       "DELETE FROM user WHERE id=?",
       [req.params.id],
