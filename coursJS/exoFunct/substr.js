@@ -1,6 +1,7 @@
 function substr(chaine, ind1, ind2) {
   let bloc = "";
   let som = ind1 + ind2;
+  // ind1 = ind1 < 0 ?  
 
   if (ind1 < 0) {
     ind1 = chaine.length + ind1;
@@ -30,5 +31,5 @@ function substr(chaine, ind1, ind2) {
 }
 let text = "bonjours ok";
 console.log("phrase: ", text);
-console.log("substr elle meme:", text.substr(3, -4));
+console.log("substr elle meme:", text.substr(8, 10));
 console.log("substr function for me :", substr("bonjours ok", 8, 10));
