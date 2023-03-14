@@ -82,8 +82,8 @@ section{
 .logo::before{
     background-color: white;
     content: "";
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
     position: absolute;
     margin: -52px 0 0 50px;
     border-radius: 100px 0;
@@ -92,8 +92,8 @@ section{
 .logo::after{
     background-color:rgba(163, 240, 240, 0.618) ;
     content: "";
-    height: 90px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     position: absolute;
     margin: 10px 0 0 85px;
     border-radius: 50%;
