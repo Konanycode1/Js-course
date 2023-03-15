@@ -21,7 +21,7 @@ input.addEventListener('keyup',(e)=> {
                 break;
             case "U":
                 let val = content.firstElementChild;
-                val = "ok"? val == null : val.remove(); 
+                 alert("créer un element svp")? val == null : val.remove(); 
                 let update = document.createElement(value[1]);
                     update.textContent = value[2];
                     let updateSt = JSON.parse(value[3]);
