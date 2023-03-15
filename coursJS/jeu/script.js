@@ -22,7 +22,8 @@ input.addEventListener('keyup',(e)=> {
                 }
                 console.log(element)
                 break;
-        
+            case "U":
+                
             default:
                 break;
         }
