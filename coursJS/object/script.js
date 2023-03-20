@@ -14,15 +14,38 @@
 
 
 
-function multi(a) {
-    let tab = '';
-    let chaine = ``
-    for (let i = 1; i < 11; i++) {
-        tab += i*a + ','
-        
+
+// const multitab =[1,2,3,1,2,3,4];
+// console.log(multitab.flat(3));
+
+// console.log(multitab.join("----"))
+// console.log(multitab.reverse())
+// console.log(Math.max(...multitab))
+// console.log(Math.min(...multitab))
+
+class People {
+    constructor(props){
+        this.name = props.name;
+        this.lastName = props.lastName;
     }
-    chaine = tab;
-    return  chaine 
-    
+    display(){
+        return this.name
+    }
+    setName(nom){
+        this.name = nom
+    }
+    setPerson(data){
+        this.name = data.name;
+        this.lastName = data.lastName;
+    }
+
 }
-console.log(multi(3))
+
+let data = {name: 'abraham', lastName: "konany"}
+let obj = {name : "kone", lastName:"mamadou"}
+let person = new People(data);
+
+let updatePer = person.setPerson(obj)
+person.setName("bamba")
+console.log(person.display())
+
