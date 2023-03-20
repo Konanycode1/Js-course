@@ -7,8 +7,7 @@ function splite(chaine, separa) {
     let index = chaine.indexOf(separa);
     for(let arg of chaine){
         if(arg !== separa){
-            recup += arg;
-        }
+         }
         else {
             tab.push(recup);
             recup = "";
