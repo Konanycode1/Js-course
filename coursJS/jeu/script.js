@@ -7,31 +7,46 @@ input.addEventListener('keyup',(e)=> {
         
         let value = e.target.value;
         value =value.split('>');
-      
+        let element;
         switch (value[0]) {
+           
             case "A":
-                let element = document.createElement(value[1]);
-                element.textContent = value[2];
-                element.className = "ajout"
-                let styl = JSON.parse(value[3])
-                for (const key in styl) {
-                  element.style[key] = styl[key];
+                
+                if(content.querySelector(value[1])){
+                    alert(`l'element existe déjà`)
                 }
-                content.appendChild(element)
+                else
+                {
+                    element = document.createElement(value[1]);
+                    element.textContent = value[2];
+                    element.className = "ajout"
+                    let styl = JSON.parse(value[3])
+                    for (const key in styl) {
+                    element.style[key] = styl[key];
+                    }
+                    content.appendChild(element);
+                }
+                 
+                
                 break;
             case "U":
-                let val = content.firstElementChild;
-                val = "ok"? val == null : val.remove(); 
-                let update = document.createElement(value[1]);
-                    update.textContent = value[2];
+                
+                if(content.querySelector(value[1])){
+                    element = content.querySelector(value[1])
+                    element.textContent = value[2];
                     let updateSt = JSON.parse(value[3]);
                     for (const key in updateSt) {
-                        update.style[key] = updateSt[key]
+                        element.style[key] = updateSt[key]
                     }
-                content.appendChild(update)
+                    
+                }
+                else{
+                    alert("Ajouter un element")
+                }
+                break
             case "D":
-                const first =  content.firstElementChild
-                first.remove() 
+                const first =  content.querySelector(value[1])
+                content.removeChild(first);
             default:
                 break;
         }
