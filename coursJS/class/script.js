@@ -99,3 +99,5 @@ function retour(tab, func) {
 }
 const plusUn = nb => nb+1;
 console.log(retour(data, plusUn))
+
+console.log(Math.ceil((Math.random()* (1000 -200) + 200 )))

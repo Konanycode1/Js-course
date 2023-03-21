@@ -63,6 +63,7 @@ function moveSnake() {
   snake.shift();
   snake.push([x + incX, y + incY]);
 }
+
 document.addEventListener("keyup", (e) => {
  changeDirection(e.keyCode)
 });
