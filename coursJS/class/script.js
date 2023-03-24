@@ -74,30 +74,42 @@
 // la recursion
 
 
-const multi = (a,b) => a*b;
-console.log(multi(5,2))
-let data = [1,2,3,4,5,6,7]
-function Callfunc(mytab, callback){
-    let recup = [];
-    for (let i = 0; i < mytab.length; i++) {
-        if(callback(mytab[i])) {
-            recup.push(mytab[i]+1);
-        } 
-    }
-    return recup;
-}
-let ajout = Callfunc(data, el => el );
-console.log(ajout)
+// const multi = (a,b) => a*b;
+// console.log(multi(5,2))
+// let data = [1,2,3,4,5,6,7]
+// function Callfunc(mytab, callback){
+//     let recup = [];
+//     for (let i = 0; i < mytab.length; i++) {
+//         if(callback(mytab[i])) {
+//             recup.push(mytab[i]+1);
+//         } 
+//     }
+//     return recup;
+// }
+// let ajout = Callfunc(data, el => el );
+// console.log(ajout)
 
 
-function retour(tab, func) {
-    const newTab = [];
-    for(let i = 0; i < tab.length; i++){
-        newTab.push(func(tab[i]));
-    }
-    return newTab;
-}
-const plusUn = nb => nb+1;
-console.log(retour(data, plusUn))
+// function retour(tab, func) {
+//     const newTab = [];
+//     for(let i = 0; i < tab.length; i++){
+//         newTab.push(func(tab[i]));
+//     }
+//     return newTab;
+// }
+// const plusUn = nb => nb+1;
+// console.log(retour(data, plusUn))
 
-console.log(Math.ceil((Math.random()* (1000 -200) + 200 )))
+// console.log(Math.ceil((Math.random()* (1000 -200) + 200 )))
+
+let myPhrase = "Bonjours, je suis nanien de la promotion 6.23 et toi ";
+ const regex = new RegExp(/[A-Z]/g)
+ console.log(myPhrase.match(regex));
+
+let email = "contact@johndoe.fr";
+const regexp = new RegExp(/johndoe.[a-z]{2,3}/g)
+console.log(email.match(regexp));
+
+let verif = "+225 0708889205";
+const reg = new RegExp('#(0|+225)[1-9]( *[0-9]{2}){4}#')
+console.log(verif.match(reg))
