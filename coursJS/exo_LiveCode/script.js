@@ -115,3 +115,5 @@ console.log(som)
 // let index = -1
 // myTab = myTab.filter(ele => myTab.indexOf(ele) != index)
 // console.log(myTab);
+
+
