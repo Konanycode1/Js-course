@@ -255,4 +255,14 @@ console.log(o)
 
 
 
+const xhr = new XMLHttpRequest();
+xhr.open("Get", "https://jsonplaceholder.typicode.com/posts");
+xhr.responseType = "json"
+xhr.onload = function () {
+    console.log(xhr.response)
+    
+}
+
+xhr.send();
+
 
