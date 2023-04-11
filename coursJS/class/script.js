@@ -220,49 +220,61 @@ miniSG.paint = 'red'
 
 
 // ------exemple----
-let nom = "abraham";
-let prenom = "konany";
-let age = 22
-const User = {
-    name : nom,
-    lastname: prenom,
-    old: age,
+// let nom = "abraham";
+// let prenom = "konany";
+// let age = 22
+// const User = {
+//     name : nom,
+//     lastname: prenom,
+//     old: age,
 
-    get addPerso () {
-        return `Mon nom est ${this.name} ${this.lastname} et j'ai ${this.old} ans`
-    },
+//     get addPerso () {
+//         return `Mon nom est ${this.name} ${this.lastname} et j'ai ${this.old} ans`
+//     },
     /**
      * @param {string} repName
      */
-    set UpdatePerso(repName){
-        this.name = repName;
+    // set UpdatePerso(repName){
+    //     this.name = repName;
 
-    }
+    // }
 
-}
-User.UpdatePerso = "KOne"
+// }
+// User.UpdatePerso = "KOne"
 // console.log(User.addPerso)
 
 //----------------prototypes
 
-const o = {a:'b', b:'c'};
-o.__proto__ = {d:'e'};
+// const o = {a:'b', b:'c'};
+// o.__proto__ = {d:'e'};
 
-console.log(o.d);
-console.log(o.hasOwnProperty('a'));
-console.log(o.hasOwnProperty('d'));
-console.log(o)
+// console.log(o.d);
+// console.log(o.hasOwnProperty('a'));
+// console.log(o.hasOwnProperty('d'));
+// console.log(o)
 
 
 
-const xhr = new XMLHttpRequest();
-xhr.open("Get", "https://jsonplaceholder.typicode.com/posts");
-xhr.responseType = "json"
-xhr.onload = function () {
-    console.log(xhr.response)
+// const xhr = new XMLHttpRequest();
+// xhr.open("Get", "https://jsonplaceholder.typicode.com/posts");
+// xhr.responseType = "json"
+// xhr.onload = function () {
+//     console.log(xhr.response)
     
-}
+// }
 
-xhr.send();
+// xhr.send();
+
+let data = new Request("https://jsonplaceholder.typicode.com/posts");
+
+fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "GET", //ou POST, PUT, DELETE, etc.
+    headers: {
+      "Content-Type": "text/plain;charset=UTF-8" //pour un corps de type chaine
+    }})
+.then(response => response.json)
+.then(response => {
+    console.log(response)
+})
 
 
