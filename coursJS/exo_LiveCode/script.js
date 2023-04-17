@@ -23,7 +23,7 @@ function nbrPremier(nbr) {
     return nbr > 1;
   }
   
-  console.log(nbrPremier(7));
+//   console.log(nbrPremier(7));
 
 
   
@@ -33,7 +33,7 @@ function nbrPremier(nbr) {
 a = a.match(rege);
 
 let som = a.reduce ((a,b)=> parseInt(a) + parseInt(b))
-console.log(som)
+// console.log(som)
 
 
   
@@ -111,9 +111,29 @@ console.log(som)
 // console.log(chif)
 
 // let myTab = [2,5,7,9,0]
+// console.log(myTab.length)
+// let index = -2
+// let tab = myTab.filter(ele => myTab.indexOf(ele) !==  (myTab.length+index))
+// console.log(tab);
 
-// let index = -1
-// myTab = myTab.filter(ele => myTab.indexOf(ele) != index)
-// console.log(myTab);
+// let data = "bonjours abraham";
 
+// data = data.split(" ");
+// console.log(data)
+// let tab = data.map(item =>{
+//     a.split().reverse().join("")
+// })
+// return tab.join(" ")
 
+let ta ="";
+let vale = "abc";
+    let dd = vale.split(" ");
+    console.log(dd)
+for(let i = 0; i < dd.length; i++){
+    ta += dd[i].split("").reverse().join("");
+    if( i < dd.length){
+        ta += " "
+    }
+    
+}
+console.log(ta)
