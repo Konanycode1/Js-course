@@ -1,38 +1,38 @@
-function premier(a) {
+// function premier(a) {
    
-    if(isNaN(a) || a < 0 || a > 30 ){
-        return -1;
-    }
-    else{
-        for (let i = 2; i < a; i++) {
-            if(i % a == 0){
-                return true;
-            }
-            else{
-                return false;
-            }
-        }
-    }   
-}
-let val = premier(7);
-console.log(val);
+//     if(isNaN(a) || a < 0 || a > 30 ){
+//         return -1;
+//     }
+//     else{
+//         for (let i = 2; i < a; i++) {
+//             if(i % a == 0){
+//                 return true;
+//             }
+//             else{
+//                 return false;
+//             }
+//         }
+//     }   
+// }
+// let val = premier(7);
+// console.log(val);
 
-function nbrPremier(nbr) {
-    for(var i = 2; i < nbr; i++)
-      if(nbr%i === 0) return false;
-    return nbr > 1;
-  }
+// function nbrPremier(nbr) {
+//     for(var i = 2; i < nbr; i++)
+//       if(nbr%i === 0) return false;
+//     return nbr > 1;
+//   }
   
 //   console.log(nbrPremier(7));
 
 
   
 
-  a = "aller9ty6";
-  let rege = new RegExp(/[0-9]/g)
-a = a.match(rege);
+//   a = "aller9ty6";
+//   let rege = new RegExp(/[0-9]/g)
+// a = a.match(rege);
 
-let som = a.reduce ((a,b)=> parseInt(a) + parseInt(b))
+// let som = a.reduce ((a,b)=> parseInt(a) + parseInt(b))
 // console.log(som)
 
 
@@ -101,10 +101,10 @@ let som = a.reduce ((a,b)=> parseInt(a) + parseInt(b))
 // console.log(val);   //sortie: ["Apple", "Linux", "Windows"]
 
 
-// let ta = "bonjours abraham"
+// let tal = "bonjours abraham"
 
 // let reg = new RegExp(/[aiou]/g);
-// console.log(ta.match(reg).length);
+// console.log(tal.match(reg).length);
 
 // let chif = 342;
 // chif = chif.toString().split('').reduce((a,b)=> parseInt(a)+ parseInt(b)) 
@@ -125,15 +125,15 @@ let som = a.reduce ((a,b)=> parseInt(a) + parseInt(b))
 // })
 // return tab.join(" ")
 
-let ta ="";
-let vale = "abc";
-    let dd = vale.split(" ");
-    console.log(dd)
-for(let i = 0; i < dd.length; i++){
-    ta += dd[i].split("").reverse().join("");
-    if( i < dd.length){
-        ta += " "
-    }
-    
-}
-console.log(ta)
+// let ta ="";
+// let vale = "bonjour konany";
+//     let dd = vale.split(" ");
+//     console.log(dd)
+// for(let i = 0; i < dd.length; i++){
+//     ta += dd[i].split("").reverse().join("");
+//     if( i < dd.length){
+//         ta += " "
+//     }
+
+// }
+// console.log(ta)
