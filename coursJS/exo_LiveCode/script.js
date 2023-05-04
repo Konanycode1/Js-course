@@ -17,13 +17,13 @@
 // let val = premier(7);
 // console.log(val);
 
-// function nbrPremier(nbr) {
-//     for(var i = 2; i < nbr; i++)
-//       if(nbr%i === 0) return false;
-//     return nbr > 1;
-//   }
+function nbrPremier(nbr) {
+    for(var i = 2; i < nbr; i++)
+      if(nbr%i === 0) return false;
+    return nbr > 1;
+  }
   
-//   console.log(nbrPremier(7));
+  console.log(nbrPremier(27));
 
 
   
